@@ -2,9 +2,10 @@ const express = require('express');
 const crypto = require('crypto');
 const app = express();
 
-// Same secret
 const SECRET = 'my-github-secret'; // must match what you set in GitHub
 
+// Testing..
+// Testing...
 // Raw body needed for signature verification
 app.use(express.json({
   verify: (req, res, buf) => { req.rawBody = buf; }
